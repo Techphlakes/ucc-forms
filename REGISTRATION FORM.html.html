@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Christian Donkor">
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
+    body {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Center the form */
+    #form-container {
+      max-width: 800px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    /* Headings */
+    h1, h2 {
+      color: tan;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Form styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    fieldset {
+      border: none;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    label {
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block;
+      text-align: left;
+    }
+
+    input, select, textarea, button {
+      display: block;
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+      display: inline-block;
+      width: auto;
+    }
+
+    button {
+      background-color: green;
+      color: white;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+
+    a {
+      color: tan;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="form-container">
+    <h1>REGISTRATION FORM OF UCC</h1>
+    <p id="demo" style="background-color: black; padding: 10px;">You have found the right school</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Greetings to you! Fill in the empty spaces with your details to get admitted"'>Click me!</button>
+    <p id="welcomeMessage">Welcome Back       </p>
+    <p id="userName"></p>
+
+    <form>
+      <fieldset>
+        <h2>PERSONAL INFORMATION</h2>
+        <label>First Name:
+          <input type="text" id="name" placeholder="Elvis" required>
+        </label>
+
+        <label>Last Name:
+          <input type="text" id="Last-Name" placeholder="Your Surname" required>
+        </label>
+
+        <label>Date of Birth:
+          <select>
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+          </select>
+          <select>
+              <option>Day</option>
+              <option>1st</option>
+              <option>2nd</option>
+              <option>3rd</option>
+              <option>4th</option>
+              <option>5th</option>
+              <option>6th</option>
+              <option>7th</option>
+              <option>8th</option>
+              <option>9th</option>
+              <option>10th</option>
+              <option>11th</option>
+              <option>12th</option>
+              <option>13th</option>
+              <option>14th</option>
+              <option>15th</option>
+              <option>16th</option>
+              <option>17th</option>
+              <option>18th</option>
+              <option>19th</option>
+              <option>20th</option>
+              <option>21st</option>
+              <option>22nd</option>
+              <option>23rd</option>
+              <option>24th</option>
+              <option>25th</option>
+              <option>26th</option>
+              <option>27th</option>
+              <option>28th</option>
+              <option>29th</option>
+              <option>30th</option>
+              <option>31st</option>
+            </select>
+            <select>
+              <option>Year</option>
+              <option>1999</option>
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+              <option>2003</option>
+              <option>2004</option>
+              <option>2005</option>
+              <option>2006</option>
+              <option>2007</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2011</option>
+              <option>2012</option>
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+            </select>
+        </label>
+
+        <label>Programme:
+          <select>
+            <option>BSC. Computer Science Engineering</option>
+            <option>BSC. Chemical Engineering</option>
+            <option>BSC. Construction Engineering</option>
+            <option>BSC. Agricultural Engineering</option>
+            <option>Bachelor of Medicine and Surgery</option>
+            <option>BSC. Degree Nursing</option>
+            <option>BSC. Midwifery</option>
+            <option>BSC. Physician Assistant</option>
+            <option>BSC. Optometry</option>
+            <option>BSC. Pharmacy</option>
+            <option>BSC. Health Administration</option>
+            <option>BSC. BCOM Accounting</option>
+            <option>BSC. BCOM Finance</option>
+            <option>BSC. Mechanical Engineering</option>
+            <option>BSC. Civil Engineering</option>
+            <option>BSC. Electrical and Electronic Engineering</option>
+            <option>BSC. Software Engineering</option>
+            <option>BSC. Biomedical Engineering</option>
+            <option>BSC. Architecture</option>
+            <option>BSC. Environmental Science</option>
+            <option>BSC. Computer Engineering</option>
+            <option>BSC. Information Technology</option>
+            <option>BSC. Economics</option>
+            <option>BSC. Mathematics</option>
+            <option>BSC. Physics</option>
+            <option>BSC. Statistics</option>
+            <option>BSC. Actuarial Science</option>
+            <option>BSC. Political Science</option>
+            <option>BSC. Public Administration</option>
+            <option>BSC. Sociology</option>
+            <option>BSC. Psychology</option>
+          </select>
+        
+        </label>
+
+        <label>Gender:
+          <input type="radio" name="gender" id="Male"> Male
+          <input type="radio" name="gender" id="Female"> Female
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <h2>ADDRESS</h2>
+        <label>Location:
+          <input type="text" id="location" placeholder="Dansoman" required>
+        </label>
+
+        <label>Region Of Hometown:
+            <select>
+              <option>Greater Accra</option>
+              <option>Central</option>
+              <option>Ashanti</option>
+              <option>Eastern</option>
+              <option>Western</option>
+              <option>Bono</option>
+              <option>Ahafo</option>
+              <option>Volta</option>
+              <option>Nothern</option>
+              <option>Upper East</option>
+              <option>Upper West</option>
+            </select>
+        </label>
+
+        <label>Email Address:
+          <input type="email" id="Email address" required>
+        </label>
+
+        <label>Password:
+          <input type="password" id="password" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Upload a Profile Picture:
+          <input type="file">
+        </label>
+
+        <label>How did you hear about us?
+          <select>
+            <option>Select One</option>
+            <option>Online</option>
+            <option>Parents at home</option>
+            <option>Teachers at school</option>
+            <option>Relatives In UCC</option>
+          </select>
+        </label>
+
+        <label>
+          <input id="terms-and-conditions" type="checkbox" required>
+          I accept the <a href="https://ucc.edu.gh/">terms and conditions</a>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label>Provide a Bio:
+          <textarea id="Bio" placeholder="Write something brief" rows="4"></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit" onclick='alert("CONGRATULATIONS!!! Your Registration has been  completed successfully")'>Register Now</button>
+    </form>
+  </div>
+
+  <script>
+    let userName = prompt("Please enter your name");
+    document.getElementById('userName').textContent = userName;
+
+    alert("We are delighted to have you on The University Of Cape Coast admission platform. Have fun!");
+  </script>
+
+
+</body>
+</html>
